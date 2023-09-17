@@ -22,3 +22,45 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.App {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.centered-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.botones-container {
+  text-align: center;
+  margin-right: 10px; /* Añade espacio entre los botones */
+}
+
+.buttonretroceder{
+  background-image: url("../public/arrow-left-solid.svg");
+  background-color:bisque;
+  width: 50px;
+  height: 55px;
+  margin-Right: 10px;
+}
+.buttonavanzar{
+  background-image: url("../public/arrow-right-solid.svg");
+  background-color:bisque;
+  width: 50px;
+  height: 55px;
+  margin-left: 10px;
+}
+
+.imagen-clase{
+  margin-top: 40px;
+  width: 100px;
+  height: 100px;
+}
+.body{
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/back_pic/04/33/42/2358453abc95983.jpg'); /* Cambia la ruta a tu imagen de fondo */
+  background-size: cover; /* Ajusta el tamaño de la imagen para que cubra toda la pantalla */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  background-attachment: fixed;
+}
