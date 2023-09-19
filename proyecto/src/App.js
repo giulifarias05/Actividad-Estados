@@ -23,10 +23,10 @@ function App() {
           onChange={handleIncrementoChange}
         />
       </div>
+              <Contador incremento={incremento} />
+
       <div>
-        <Contador incremento={incremento} />
       </div>
-      <h1>Hora</h1>
        <ContadorHoras incremento={1} />
     
     </div>

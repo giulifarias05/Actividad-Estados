@@ -42,10 +42,6 @@ function ContadorHoras({ incremento }) {
   return (
     <div>
       <p>Hora Actual: {horaActual.toLocaleTimeString()}</p>
-      <div className="botones-container">
-        <button className="buttonretroceder" onClick={retroceder}></button>
-        <button className="buttonavanzar" onClick={avanzar}></button>
-      </div>
       {imagen && <img src={imagen} alt="Imagen según la hora" className="imagen-clase" />}
     </div>
   );
