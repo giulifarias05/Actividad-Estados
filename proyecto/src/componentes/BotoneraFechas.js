@@ -3,20 +3,20 @@ import { format, addDays } from 'date-fns';
 import { es } from 'date-fns/locale';
 
 
-function BotonesGrid() {
-  const [contador, setContador] = useState(0);
-  const [incremento, setIncremento] = useState(1);
+function Botonera() {
+  const [incremento, setIncremento] = useState(0);
+  const [contadorDias, setContador] = useState(0);
   const [fechaActual, setFechaActual] = useState(new Date());
 
 
   const avanzar = () => {
-    setContador(contador + incremento);
+    setContador(contadorDias + incremento);
     const nuevaFecha = addDays(fechaActual, incremento);
     setFechaActual(nuevaFecha);
   };
 
   const retroceder = () => {
-    setContador(contador - incremento);
+    setContador(contadorDias - incremento);
     const nuevaFecha = addDays(fechaActual, -incremento);
     setFechaActual(nuevaFecha);
   };
@@ -43,24 +43,25 @@ function BotonesGrid() {
   }
  
   return (
-    <div className="botones-grid">
+    <div >
      <h1>Bienvenidos</h1>
      <div className="card">
-      <div className="fila">
+      <div>
         <button className="buttonretroceder" onClick={decrementar}></button>
         <span className="texto-grande">{incremento}</span>
         <button className='buttonavanzar' onClick={incrementar}></button>
         <br />
       </div>
-      <div className="fila">
+      <div>
       <br />
         <button className="buttonretroceder" onClick={retroceder}></button>
-        <span className="texto-grande">{contador}</span>
+        <span className="texto-grande">{contadorDias}</span>
         <button className='buttonavanzar' onClick={avanzar}></button>
       </div>
       <br />
      <button className="btn btn-link mi-clase">
-       {format(fechaActual, "dd 'de' MMMM 'del' yyyy", { locale: es })}</button>       <br/>  <br />
+       {format(fechaActual, "dd 'de' MMMM 'del' yyyy", { locale: es })}
+       </button>       <br/>  <br />
       {format(fechaActual, 'HH:mm:ss')}
       <br />     
         {imagenURL && <img src={imagenURL} className='imagen-clase' />}
@@ -69,4 +70,4 @@ function BotonesGrid() {
   );
 }
 
-export default BotonesGrid;
+export default Botonera;

@@ -23,7 +23,7 @@ h1{
   border: 1px solid #ccc; 
   border-radius: 10px; 
   max-width: 400px; 
-  margin: 0 auto; /* Centrar horizontalmente en la página */
+  margin: 0 auto;
   box-shadow: 0 0 10px rgba(230, 190, 190, 0.897); 
   background-color: beige;
 
