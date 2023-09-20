@@ -32,6 +32,7 @@ function Botonera() {
   };
 
   const horaActual = new Date().getHours();
+  const nombreDiaSemana=format(fechaActual, 'EEEE', {locale:es});
   let imagenURL = '';
 
   if (horaActual >= 6 && horaActual < 12) {
@@ -60,7 +61,7 @@ function Botonera() {
       </div>
       <br />
      <button className="btn btn-link mi-clase">
-       {format(fechaActual, "dd 'de' MMMM 'del' yyyy", { locale: es })}
+       {nombreDiaSemana} {format(fechaActual, "dd 'de' MMMM 'del' yyyy", { locale: es })}
        </button>       <br/>  <br />
       {format(fechaActual, 'HH:mm:ss')}
       <br />     
