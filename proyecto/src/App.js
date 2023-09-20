@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import Contador from './componentes/contadorybotones';
-import ContadorHoras from './componentes/ContadorHoras';
+import Botones from './componentes/BotoneraFechas';
 import './App.css';
 
 
@@ -14,21 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Fecha</h1>
-      <div>
-        <p>Elige la cantidad de dias que deseas avanzar o retroceder:</p>
-        <input
-          type="number"
-          value={incremento}
-          onChange={handleIncrementoChange}
-        />
-      </div>
-              <Contador incremento={incremento} />
-
-      <div>
-      </div>
-       <ContadorHoras incremento={1} />
-    
+       <Botones/>
     </div>
   );
 }

@@ -1,66 +1,86 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
 
 .App {
   text-align: center;
   margin-top: 20px;
+
+}
+body{
+  background-image: url('https://img.freepik.com/vector-gratis/fondo-circulos-tonos-oscuros_60389-166.jpg?w=826&t=st=1695171182~exp=1695171782~hmac=70784dbdcd064bc225ff82b721c5ca2e088c52297ce56b143267483683a0d072'); /* Cambia la ruta a tu imagen de fondo */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el cuerpo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* Fija la imagen de fondo en su posición */
+}
+h1{
+  color: antiquewhite;
 }
 
-.centered-container {
+/* CSS para centrar la card en el centro de la página */
+.card {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Ajusta el espaciado interior según tus necesidades */
+  border: 1px solid #ccc; /* Bordes de la card */
+  border-radius: 10px; /* Bordes redondeados de la card */
+  max-width: 400px; /* Ancho máximo de la card para hacerla responsive */
+  margin: 0 auto; /* Centrar horizontalmente en la página */
+  box-shadow: 0 0 10px rgba(230, 190, 190, 0.897); /* Ajusta los valores según el efecto de sombra deseado */
+  background-color: beige;
+
 }
 
-.botones-container {
-  text-align: center;
-  margin-right: 10px; /* Añade espacio entre los botones */
-}
 
 .buttonretroceder{
   background-image: url("../public/arrow-left-solid.svg");
   background-color:bisque;
   width: 50px;
-  height: 55px;
+  height: 60px;
   margin-Right: 10px;
+  margin-left: 10px;
+  border: none; /* Elimina los bordes */
+  border-radius: 10px; /* Hace que el botón sea ligeramente circular */
+  outline: none; /* Elimina el contorno al hacer clic */
 }
 .buttonavanzar{
   background-image: url("../public/arrow-right-solid.svg");
   background-color:bisque;
   width: 50px;
-  height: 55px;
+  height: 60px;
   margin-left: 10px;
+  margin-left: 10px;
+  border: none; /* Elimina los bordes */
+  border-radius: 10px; /* Hace que el botón sea ligeramente circular */
+  outline: none; /* Elimina el contorno al hacer clic */
+}
+
+.buttonretroceder:hover,
+.buttonavanzar:hover {
+  background-color: rgb(230, 162, 131); /* Cambia el color de fondo al pasar el mouse */
+}
+
+.texto-grande {
+  font-size: 24px; /* Tamaño de fuente más grande */
+  font-weight: bold; /* Puede hacer el texto en negrita */
+  color: #333; /* Color de texto personalizado */
+  /* Otros estilos que desees aplicar */
+  
+}
+
+.btn.btn-link {
+  border: none; /* Elimina el borde */
+  outline: none; /* Elimina el contorno al hacer clic */
+  box-shadow: none; /* Elimina cualquier sombra del botón (opcional) */
+  width: 300px;
+  height: 80px;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: rgb(230, 162, 131); /* Cambia el color de fondo al pasar el mouse */
+  font-weight: bold;
 }
 
 .imagen-clase{
   margin-top: 40px;
   width: 100px;
   height: 100px;
-}
-.body{
-  background-image: url('https://png.pngtree.com/thumb_back/fh260/back_pic/04/33/42/2358453abc95983.jpg'); /* Cambia la ruta a tu imagen de fondo */
-  background-size: cover; /* Ajusta el tamaño de la imagen para que cubra toda la pantalla */
-  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
-  background-attachment: fixed;
 }
