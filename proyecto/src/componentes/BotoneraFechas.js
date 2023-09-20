@@ -35,13 +35,10 @@ function BotonesGrid() {
   let imagenURL = '';
 
   if (horaActual >= 6 && horaActual < 12) {
-    // Mañana
     imagenURL = 'https://cdn.icon-icons.com/icons2/1370/PNG/512/if-weather-3-2682848_90785.png';
-  } else if (horaActual >= 12 && horaActual < 18) {
-    // Tarde
+  } else if (horaActual >= 12 && horaActual < 19) {
     imagenURL = 'https://cdn.icon-icons.com/icons2/1370/PNG/512/if-weather-26-2682825_90789.png';
   } else {
-    // Noche
     imagenURL = 'https://cdn.icon-icons.com/icons2/1370/PNG/512/if-weather-4-2682847_90799.png';
   }
  
